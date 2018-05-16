@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "a192be6d-d75e-427d-95cc-7f74edeba37c",
+		"name": "Spring Boot (YouTube)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET all topics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/topics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"topics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET a topic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/topics/math",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topics",
+						"math"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Beans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/beans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"beans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a topic",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"geometry\",\"name\":\"geometry\",\"description\":\"geometry topic\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/topics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"topics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a topic",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"geometry\",\"name\":\"Geometry\",\"description\":\"geometry topic\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/topics/geometry",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"topics",
+						"geometry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a topic",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/topics/math",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topics",
+						"math"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
